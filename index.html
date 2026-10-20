@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrésnael Acevedo De La Cruz · Developer tools</title>
+  <meta name="description" content="Andrésnael Acevedo De La Cruz (UvilleraMente) is a developer from the Dominican Republic working across C#/.NET, Angular and Flutter, building browser-first developer tools like JSON Surgeon and Cipher Surgeon.">
+  <meta name="author" content="Andrésnael Acevedo De La Cruz">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1214" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://uvilleramente.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UvilleraMente">
+  <meta property="og:title" content="Andrésnael Acevedo De La Cruz · Developer tools">
+  <meta property="og:description" content="Browser-first developer tools that show what they changed and why. C#/.NET, Angular and Flutter developer from the Dominican Republic.">
+  <meta property="og:url" content="https://uvilleramente.github.io/">
+  <meta property="og:image" content="https://uvilleramente.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Andrésnael Acevedo De La Cruz, developer tools with surgical precision">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_DO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Andrésnael Acevedo De La Cruz · Developer tools">
+  <meta name="twitter:description" content="Browser-first developer tools that show what they changed and why.">
+  <meta name="twitter:image" content="https://uvilleramente.github.io/assets/og.png">
+
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrésnael Acevedo De La Cruz",
+    "alternateName": "UvilleraMente",
+    "url": "https://uvilleramente.github.io/",
+    "sameAs": ["https://github.com/UvilleraMente"],
+    "jobTitle": "Software developer",
+    "knowsAbout": ["C#", ".NET", "Angular", "Flutter", "TypeScript", "Developer tools"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="UvilleraMente, home">
+        <img src="favicon.svg" width="28" height="28" alt="">
+        <span class="brand__name">uvilleramente</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="#tools" data-i18n="nav.tools">Tools</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <button type="button" class="ctrl" id="lang-toggle" aria-label="Cambiar a español" data-i18n-attr="aria-label:lang.switch" hidden>
+          <span class="ctrl__text" data-i18n="lang.target">ES</span>
+        </button>
+        <button type="button" class="ctrl" id="theme-toggle" aria-label="Toggle dark theme" data-i18n-attr="aria-label:theme.toggle" aria-pressed="false" hidden>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="prompt"><span class="prompt__path">~/uvilleramente</span> <span class="prompt__sym">$</span> whoami<span class="caret" aria-hidden="true"></span></p>
+          <h1 id="hero-title" class="hero__name">Andrésnael Acevedo <span class="nowrap">De La Cruz</span></h1>
+          <p class="hero__pitch" data-i18n="hero.pitch">I build developer tools that fix things precisely and tell you exactly what they changed.</p>
+          <p class="hero__meta">
+            <span>C#/.NET</span><span>Angular</span><span>Flutter</span><span data-i18n="hero.location">Dominican Republic</span>
+          </p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#tools" data-i18n="hero.cta">See the tools</a>
+            <a class="btn" href="https://github.com/UvilleraMente" rel="me noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+            <a class="btn" href="#" data-link="cv" hidden>
+              <span data-i18n="hero.cv">Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="tray" aria-label="Instrument tray" data-i18n-attr="aria-label:tray.label">
+          <div class="tray__head">
+            <span data-i18n="tray.title">Instrument tray</span>
+            <span class="tray__count">04</span>
+          </div>
+          <ol class="tray__list">
+            <li><a href="#json-surgeon"><span class="tray__no">01</span><span class="tray__name">json-surgeon</span><span class="tray__desc" data-i18n="tray.json">repair · explain · type</span></a></li>
+            <li><a href="#cipher-surgeon"><span class="tray__no">02</span><span class="tray__name">cipher-surgeon</span><span class="tray__desc" data-i18n="tray.cipher">decode · verify · peel</span></a></li>
+            <li><a href="#firmalisto"><span class="tray__no">03</span><span class="tray__name">firmalisto</span><span class="tray__desc" data-i18n="tray.firmalisto">fill · preview · sign</span></a></li>
+            <li><a href="#jobot"><span class="tray__no">04</span><span class="tray__name">jobot</span><span class="tray__desc" data-i18n="tray.jobot">scan · score · draft</span></a></li>
+          </ol>
+          <div class="ruler" aria-hidden="true"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED TOOLS ============ -->
+    <section class="section" id="tools" aria-labelledby="tools-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="section__no">01</p>
+          <h2 id="tools-title" data-i18n="tools.title">Featured tools</h2>
+          <p class="section__lede" data-i18n="tools.lede">Two sibling tools with the same rules: everything runs in your browser, nothing is uploaded, and every change is explained.</p>
+        </header>
+
+        <!-- JSON Surgeon -->
+        <article class="tool" id="json-surgeon" aria-labelledby="js-title">
+          <figure class="tool__media">
+            <div class="chrome" aria-hidden="true"><span></span><span></span><span></span><code>uvilleramente.github.io/json-surgeon</code></div>
+            <img src="assets/json-surgeon-800.jpg"
+                 srcset="assets/json-surgeon-800.jpg 800w, assets/json-surgeon.jpg 1440w"
+                 sizes="(min-width: 1000px) 560px, 100vw"
+                 width="1440" height="900" loading="lazy" decoding="async"
+                 alt="JSON Surgeon repairing an LLM response: the input with every fix highlighted, the list of fixes, and the repaired JSON."
+                 data-i18n-attr="alt:json.alt">
+          </figure>
+          <div class="tool__body">
+            <p class="badge badge--live"><span class="dot" aria-hidden="true"></span><span data-i18n="status.live">Live</span></p>
+            <h3 id="js-title" class="tool__title">JSON Surgeon</h3>
+            <p class="tool__tagline" data-i18n="json.tagline">Paste broken JSON and get valid JSON back, with an explanation for every fix.</p>
+            <ul class="checks">
+              <li data-i18n="json.f1">Repairs LLM output: Markdown fences, chatter, truncated responses, Python and JavaScript literals.</li>
+              <li data-i18n="json.f2">Every fix is reported with its line and column in your original input.</li>
+              <li data-i18n="json.f3">Generates TypeScript interfaces, C# records, Dart classes and JSON Schema.</li>
+              <li data-i18n="json.f4">Zero-dependency npm library and CLI that share the same engine.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:tags.label">
+              <li>Angular 20</li><li>TypeScript</li><li>Signals</li><li>Web Workers</li><li>Vitest</li><li>esbuild</li>
+            </ul>
+            <div class="install">
+              <code>npm i json-surgeon</code>
+              <button type="button" class="copy" data-copy="npm i json-surgeon" aria-label="Copy install command" data-i18n-attr="aria-label:copy.label" hidden><span data-i18n="copy.text">Copy</span></button>
+            </div>
+            <div class="actions">
+              <a class="btn btn--primary" href="https://uvilleramente.github.io/json-surgeon/"><span data-i18n="btn.demo">Live demo</span> <span aria-hidden="true">↗</span></a>
+              <a class="btn" href="https://github.com/UvilleraMente/json-surgeon" rel="noopener"><span data-i18n="btn.source">Source</span></a>
+              <a class="btn" href="https://www.npmjs.com/package/json-surgeon" rel="noopener">npm</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cipher Surgeon -->
+        <article class="tool tool--flip" id="cipher-surgeon" aria-labelledby="cs-title">
+          <figure class="tool__media" id="cipher-media">
+            <div class="chrome" aria-hidden="true"><span></span><span></span><span></span><code>uvilleramente.github.io/cipher-surgeon</code></div>
+            <!-- Placeholder until assets/cipher-surgeon.png exists. Set SITE.screenshots.cipherSurgeon in main.js to swap it in. -->
+            <div class="mock" role="img" aria-label="Illustration: a JWT split into header, payload and signature, with security findings listed below." data-i18n-attr="aria-label:cipher.mockAlt">
+              <div class="mock__jwt" aria-hidden="true">
+                <span class="seg seg--h">eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0</span><span class="seg__dot">.</span><span class="seg seg--p">eyJzdWIiOiI0MiIsImV4cCI6MTcwMDAwMDAwMH0</span><span class="seg__dot">.</span><span class="seg seg--s">∅</span>
+              </div>
+              <ul class="mock__findings" aria-hidden="true">
+                <li class="f-bad"><b>alg</b> none <em data-i18n="cipher.m1">unsigned token</em></li>
+                <li class="f-bad"><b>exp</b> 2023-11-14 <em data-i18n="cipher.m2">expired</em></li>
+                <li class="f-warn"><b>HS256</b> <em data-i18n="cipher.m3">weak HMAC secret</em></li>
+                <li class="f-ok"><b>layers</b> base64url → JWT → JSON</li>
+              </ul>
+              <p class="mock__note" data-i18n="cipher.soon">Screenshot coming soon</p>
+            </div>
+          </figure>
+          <div class="tool__body">
+            <p class="badge badge--wip"><span class="dot" aria-hidden="true"></span><span data-i18n="status.building">In development</span></p>
+            <h3 id="cs-title" class="tool__title">Cipher Surgeon</h3>
+            <p class="tool__tagline" data-i18n="cipher.tagline">Decode, verify and sign JWTs in your browser, with every claim explained and every security issue flagged.</p>
+            <ul class="checks">
+              <li data-i18n="cipher.f1">JWT decoder, verifier and signer that flags alg none, expired tokens and weak HMAC secrets.</li>
+              <li data-i18n="cipher.f2">AES-256-GCM password-based encryption and decryption, plus hashes and HMAC.</li>
+              <li data-i18n="cipher.f3">“Peel the layers”: automatically unwraps base64, base64url, hex, URL encoding, JWT and JSON.</li>
+              <li data-i18n="cipher.f4">Zero dependencies, built on Web Crypto. Also an npm library and CLI.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:tags.label">
+              <li>Web Crypto</li><li>TypeScript</li><li>JWT</li><li>AES-GCM</li><li data-i18n="tag.zerodeps">Zero deps</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn--primary" href="https://uvilleramente.github.io/cipher-surgeon/"><span data-i18n="btn.demo">Live demo</span> <span aria-hidden="true">↗</span></a>
+              <a class="btn" href="https://github.com/UvilleraMente/cipher-surgeon" rel="noopener"><span data-i18n="btn.source">Source</span></a>
+              <a class="btn" href="https://www.npmjs.com/package/cipher-surgeon" rel="noopener" data-link="cipherNpm">npm</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ OTHER PROJECTS ============ -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="section__no">02</p>
+          <h2 id="projects-title" data-i18n="projects.title">Other projects</h2>
+          <p class="section__lede" data-i18n="projects.lede">Small products, each built to do one job well.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card" id="firmalisto" aria-labelledby="fl-title">
+            <div class="card__top">
+              <h3 id="fl-title">Firmalisto <span class="card__alias">docforge</span></h3>
+              <p class="badge badge--wip"><span class="dot" aria-hidden="true"></span><span data-i18n="status.prelaunch">Pre-launch</span></p>
+            </div>
+            <p data-i18n="fl.desc">A generator of legal and employment documents by country (contracts, letters, promissory notes) for Spanish-speaking users. You fill in a form, watch a live preview, and download a PDF generated in the browser.</p>
+            <ul class="checks checks--sm">
+              <li data-i18n="fl.f1">A static SEO page for every document × country combination, with FAQ structured data.</li>
+              <li data-i18n="fl.f2">PDF and Word export; drafts saved locally in the browser.</li>
+              <li data-i18n="fl.f3">One-time payments through Polar, with no database.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:tags.label">
+              <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>pdfmake</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn--sm" href="https://github.com/UvilleraMente/docforge" rel="noopener"><span data-i18n="btn.source">Source</span></a>
+            </div>
+          </article>
+
+          <article class="card" id="jobot" aria-labelledby="jb-title">
+            <div class="card__top">
+              <h3 id="jb-title">Jobot</h3>
+              <p class="badge badge--private"><span class="dot" aria-hidden="true"></span><span data-i18n="status.private">Private / local tool</span></p>
+            </div>
+            <p data-i18n="jb.desc">A personal job-search assistant that runs entirely on my PC. It collects remote software jobs from public boards, filters them, scores them with a local LLM through Ollama, and drafts a cover letter for each good match.</p>
+            <ul class="checks checks--sm">
+              <li data-i18n="jb.f1">Local AI (Ollama + Qwen3): free, and nothing leaves the machine.</li>
+              <li data-i18n="jb.f2">Pre-fills application forms, but a human always reviews and presses Submit.</li>
+              <li data-i18n="jb.f3">Never automates LinkedIn; a small Flask panel tracks applications and interviews.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:tags.label">
+              <li>Python</li><li>Ollama</li><li>Flask</li><li>SQLite</li><li>Playwright</li>
+            </ul>
+            <p class="card__note" data-i18n="jb.note">No public repository.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="section__no">03</p>
+          <h2 id="stack-title" data-i18n="stack.title">Skills &amp; stack</h2>
+          <p class="section__lede" data-i18n="stack.lede">What I work with day to day, and what these projects are built on.</p>
+        </header>
+        <div class="stack">
+          <div class="stack__group">
+            <h3 data-i18n="stack.backend">Backend</h3>
+            <ul><li>C#</li><li>.NET</li><li>System.Text.Json</li><li>Python</li><li>Flask</li><li>SQLite</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 data-i18n="stack.frontend">Web front end</h3>
+            <ul><li>Angular</li><li>TypeScript</li><li>Next.js</li><li>React</li><li>SCSS</li><li>Tailwind CSS</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 data-i18n="stack.mobile">Mobile</h3>
+            <ul><li>Flutter</li><li>Dart</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 data-i18n="stack.platform">Browser platform</h3>
+            <ul><li>Web Crypto</li><li>Web Workers</li><li>Compression Streams</li><li>localStorage</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 data-i18n="stack.tooling">Tooling &amp; delivery</h3>
+            <ul><li>Vitest</li><li>esbuild</li><li>Node.js CLIs</li><li>npm packages</li><li>GitHub Actions</li><li>GitHub Pages</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 data-i18n="stack.ai">AI integration</h3>
+            <ul><li>Ollama</li><li data-i18n="stack.llm">Local LLMs</li><li data-i18n="stack.llmjson">LLM output handling</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="wrap about">
+        <header class="section__head">
+          <p class="section__no">04</p>
+          <h2 id="about-title" data-i18n="about.title">About</h2>
+        </header>
+        <div class="about__text">
+          <p data-i18n="about.p1">I'm a developer from the Dominican Republic, working across C#/.NET, Angular and Flutter. The same small jobs kept coming up in that work: JSON that almost parses, and typing the matching model by hand in three languages.</p>
+          <p data-i18n="about.p2">Most repair tools fix things silently. I wanted tools that show what they changed and why, because a silent fix can hide a real bug, like a truncated payload. That idea became JSON Surgeon, and now Cipher Surgeon. Alongside them I build small products, like Firmalisto, aimed at one specific problem.</p>
+        </div>
+        <ul class="principles">
+          <li><span class="principles__k">explain()</span><span data-i18n="pr.1">Every change is reported, never silent.</span></li>
+          <li><span class="principles__k">local()</span><span data-i18n="pr.2">Runs in the browser; your data stays with you.</span></li>
+          <li><span class="principles__k">deps = 0</span><span data-i18n="pr.3">Zero runtime dependencies where it counts.</span></li>
+          <li><span class="principles__k">test()</span><span data-i18n="pr.4">A framework-free, tested core with a thin UI on top.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="section__no">05</p>
+          <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+          <p class="section__lede" data-i18n="contact.lede">Found a bug in one of the tools, or want to talk about a project? Reach me here.</p>
+        </header>
+        <ul class="contact">
+          <li><a href="https://github.com/UvilleraMente" rel="me noopener"><span class="contact__k">github</span><span class="contact__v">UvilleraMente</span></a></li>
+          <li data-link-item="email" hidden><a href="#" data-link="email"><span class="contact__k">email</span><span class="contact__v" data-link-text="email"></span></a></li>
+          <li data-link-item="linkedin" hidden><a href="#" data-link="linkedin" rel="me noopener"><span class="contact__k">linkedin</span><span class="contact__v" data-link-text="linkedin"></span></a></li>
+          <li data-link-item="cv" hidden><a href="#" data-link="cv"><span class="contact__k">cv</span><span class="contact__v" data-i18n="contact.cv">Download CV</span></a></li>
+          <li><a href="https://github.com/UvilleraMente/json-surgeon/issues" rel="noopener"><span class="contact__k">issues</span><span class="contact__v" data-i18n="contact.issues">Report a JSON Surgeon bug</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> Andrésnael Acevedo De La Cruz</p>
+      <p class="footer__built" data-i18n="footer.built">Hand-written HTML, CSS and a little JavaScript. No trackers.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
