@@ -14,9 +14,7 @@
       cipherNpm: 'https://www.npmjs.com/package/cipher-surgeon' // TODO: set to '' if cipher-surgeon is not on npm yet
     },
     screenshots: {
-      // TODO: when the screenshot exists, save it as assets/cipher-surgeon.png (16:10 works best) and set:
-      // cipherSurgeon: 'assets/cipher-surgeon.png'
-      cipherSurgeon: ''
+      cipherSurgeon: 'assets/cipher-surgeon.png'
     }
   };
 
